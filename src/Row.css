@@ -1,0 +1,37 @@
+.row {
+  margin-left: 20px;
+  color: whitesmoke;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 20px;
+  transition: transform 500ms;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
+
+.row_posterLarge {
+  max-height: 250px;
+}
+
+.row_posterLarge:hover {
+  transform: scale(1.1);
+}
+
+/* https://netflix-clone-sagar.web.app */
